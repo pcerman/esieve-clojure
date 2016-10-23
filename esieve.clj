@@ -2,7 +2,7 @@
 ;; Copyright (c) 2016 Peter Cerman (https://github.com/pcerman)
 
 ;;----------------------------------------------------------------------
-;; [Pairing heap](https://en.wikipedia.org/wiki/Pairing_heap)
+;; Pairing heap (https://en.wikipedia.org/wiki/Pairing_heap)
 
 (defn ph:merge [h1 h2]
   (cond (empty? h1) h2
@@ -33,7 +33,8 @@
       (ph:merge-pairs (rest ph))))
 
 ;;----------------------------------------------------------------------
-;; **Infinite lazy sequence of the prime numbers**
+;; Infinite lazy sequence of the prime numbers
+;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; This is implementation of the Sieve of Eratosthenes by using
 ;; functional programming principles.
 
@@ -65,9 +66,9 @@
 (def primes (esieve))
 
 ;;----------------------------------------------------------------------
-;; **Example:**
-;; Function esieve-example returns lazy-seq of first 25 primes:
-;; (2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97)
+;; Example:
+;;    function esieve-example returns lazy-seq of first 25 primes:
+;;    (2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97)
 
 (defn esieve-example []
   (take 25 primes))
