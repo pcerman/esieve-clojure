@@ -1,4 +1,4 @@
-# esieve-clojure
+# Sieve of Eratosthenes (esieve-clojure)
 
 This is experimental implementation of the _Sieve of Eratosthenes_ in functional
 style in [clojure](https://clojure.org) programming language.
@@ -22,7 +22,7 @@ Copyright (c) 2016 Peter Cerman (https://github.com/pcerman)
 (take 100 (esieve))
 ```
 
-### Referencies
+### References
 
 1. O'Neill, Melissa E., "The Genuine Sieve of Eratosthenes",
    Journal of Functional Programming,
